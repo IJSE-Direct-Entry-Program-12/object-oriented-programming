@@ -1,6 +1,17 @@
 import java.math.BigDecimal;
 
-public class AppInitializer {
+public class PunchiKade {
+    static Customer[] customers;
+    static Item[] items;
+    static Order[] orders;
+    public static void addNewCustomer(Customer customer){
+    }
+    public static void addNewItem(Item item){
+    }
+    public static void placeNewOrder(Order order){
+    }
+    public static void main(String[] args) {
+    }
 }
 
 class Customer {
