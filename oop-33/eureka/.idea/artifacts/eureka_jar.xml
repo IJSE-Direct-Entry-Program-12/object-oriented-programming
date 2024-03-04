@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="eureka:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/eureka_jar</output-path>
+    <root id="archive" name="eureka.jar">
+      <element id="module-output" name="eureka" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ribbon/out/artifacts/ribbon_jar/ribbon.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

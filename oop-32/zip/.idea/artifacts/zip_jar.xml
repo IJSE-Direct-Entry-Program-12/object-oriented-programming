@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="zip:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zip_jar</output-path>
+    <root id="archive" name="zip.jar">
+      <element id="module-output" name="zip" />
+    </root>
+  </artifact>
+</component>
