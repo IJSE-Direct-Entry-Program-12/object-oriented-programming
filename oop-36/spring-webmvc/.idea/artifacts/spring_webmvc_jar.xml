@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spring-webmvc:jar">
+    <output-path>$PROJECT_DIR$/../dist</output-path>
+    <root id="archive" name="spring-webmvc.jar">
+      <element id="module-output" name="spring-webmvc" />
+    </root>
+  </artifact>
+</component>

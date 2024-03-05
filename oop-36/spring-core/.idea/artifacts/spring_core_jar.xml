@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spring-core:jar">
+    <output-path>$PROJECT_DIR$/../dist</output-path>
+    <root id="archive" name="spring-core.jar">
+      <element id="module-output" name="spring-core" />
+    </root>
+  </artifact>
+</component>
