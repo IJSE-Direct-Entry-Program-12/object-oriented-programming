@@ -9,7 +9,20 @@ public class AppInitializer {
         System.out.println("AppInitializer: Static");
     }
     public static void main(String[] args) {
-        System.out.println(new C().z);
+        C c = new C();
+        System.out.println(c.z);    // 33
+        System.out.println(c.x);    // 11
+        System.out.println(c.a);    // 13
+        System.out.println(c.y);    // 23
+    }
+}
+class B extends AppInitializer{
+    static int y = 20;
+    {
+        System.out.println("B: Instance");
+    }
+    static{
+        System.out.println("B: Static");
     }
 }
 class A extends B{
@@ -22,35 +35,6 @@ class A extends B{
     }
     static{
         System.out.println("A: Static");
-    }
-}
-class B extends AppInitializer{
-    static int y = 20;
-    {
-        System.out.println("B: Instance");
-    }
-    static{
-        System.out.println("B: Static");
-    }
-}
-class C extends D{
-    {
-        y = x + a;
-    }
-    int z = x + y;
-    static {
-        y += 3;
-    }
-    public C() {
-        super(2);
-        System.out.println("C: Constructor");
-        x++;
-    }
-    {
-        System.out.println("C: Instance");
-    }
-    static{
-        System.out.println("C: Static");
     }
 }
 class D extends A{
@@ -67,5 +51,25 @@ class D extends A{
     }
     static{
         System.out.println("D: Static");
+    }
+}
+class C extends D{
+    {
+        y = x + a;
+    }
+    int z = x + y;
+    static {
+        y += 3;
+    }
+    public C() {
+        super(2);
+        System.out.println(" ");
+        x++;
+    }
+    {
+        System.out.println("C: Instance");
+    }
+    static{
+        System.out.println("C: Static");
     }
 }
