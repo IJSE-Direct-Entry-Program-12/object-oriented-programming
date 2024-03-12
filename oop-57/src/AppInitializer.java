@@ -6,7 +6,7 @@ public class AppInitializer {
         car.stopCar();
     }
 }
-
+// Whole/Part Relationships
 class Car{
    Engine engine;
    void startCar(){
